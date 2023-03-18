@@ -3,6 +3,7 @@
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
+
 // Console.Write("Введите первое число: ");
 // int a = int.Parse(Console.ReadLine()!);
 
@@ -17,26 +18,38 @@
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-Console.Write("Введите первое число: ");
-int a = int.Parse(Console.ReadLine()!);
 
-Console.Write("Введите второе число: ");
-int b = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите первое число: ");
+// int a = int.Parse(Console.ReadLine()!);
 
-Console.Write("Введите третье число: ");
-int c = int.Parse(Console.ReadLine()!);
+// Console.Write("Введите второе число: ");
+// int b = int.Parse(Console.ReadLine()!);
 
-int max = a;
+// Console.Write("Введите третье число: ");
+// int c = int.Parse(Console.ReadLine()!);
 
-if (a >= max) System.Console.WriteLine($"max = {a}"); 
-if (b > max) System.Console.WriteLine($"max = {b}");
-if (c > max) System.Console.WriteLine($"max = {c}");
+// int max = a;
+
+// if (a >= max) System.Console.WriteLine($"max = {a}"); 
+// if (b > max) System.Console.WriteLine($"max = {b}");
+// if (c > max) System.Console.WriteLine($"max = {c}");
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка(number%2==0)).
 
 // 4 -> да
 // -3 -> нет
 // 7 -> нет
+
+Console.Write("Введите первое число: ");
+int number = int.Parse(Console.ReadLine()!);
+if (number % 2 == 0)
+{
+    System.Console.WriteLine($"Число {number} четное");
+}
+else
+{
+    System.Console.WriteLine($"Число {number} нечетное");
+}
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
